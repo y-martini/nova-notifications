@@ -1,0 +1,35 @@
+{
+    "name": "soluzione-software/nova-notifications",
+    "description": "A Laravel Nova package that adds notifications in your Nova app.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "broadcast",
+        "notifications"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "coreproc/nova-echo": "^0.2.0",
+        "illuminate/notifications": "^5.7.15 | 5.8.*",
+        "illuminate/support": "^5.7.15 | 5.8.*",
+        "pusher/pusher-php-server": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SoluzioneSoftware\\NovaNotifications\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SoluzioneSoftware\\NovaNotifications\\NovaNotificationsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
